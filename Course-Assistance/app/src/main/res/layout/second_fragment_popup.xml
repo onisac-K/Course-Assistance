@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <GridLayout
+        android:id="@+id/sec_popup_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="24dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:paddingRight="24dp"
+        android:columnCount="1" >
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="16dp"
+            android:columnCount="4"
+            android:rowCount="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:text="课程号"
+                />
+            <EditText
+                android:id="@+id/sec_popup_cno"
+                android:layout_columnSpan="3"
+                android:layout_gravity="fill"
+                android:background="@drawable/editsharp_select"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="36dp"
+                android:layout_height="30dp"
+                android:textSize="14sp"
+                />
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="16dp"
+            android:columnCount="4"
+            android:rowCount="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="课程名"
+                />
+
+            <EditText
+                android:id="@+id/sec_popup_class_name"
+                android:layout_columnSpan="3"
+                android:layout_gravity="fill"
+                android:background="@drawable/editsharp_select"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="36dp"
+                android:layout_height="30dp"
+                android:textSize="14sp"
+                android:inputType="textPhonetic"
+                />
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="16dp"
+            android:columnCount="4"
+            android:rowCount="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="教师号"
+                />
+
+            <EditText
+                android:id="@+id/sec_popup_teacher_no"
+                android:layout_columnSpan="3"
+                android:layout_gravity="fill"
+                android:background="@drawable/editsharp_select"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="36dp"
+                android:layout_height="30dp"
+                android:textSize="14sp"
+                android:inputType="number"
+                />
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="16dp"
+            android:columnCount="4"
+            android:rowCount="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:text="教师名"
+                />
+
+            <EditText
+                android:id="@+id/sec_popup_teacher_name"
+                android:layout_columnSpan="3"
+                android:layout_gravity="fill"
+                android:background="@drawable/editsharp_select"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="36dp"
+                android:layout_height="30dp"
+                android:textSize="14dp"
+
+                />
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="16dp"
+            android:columnCount="4"
+            android:rowCount="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="上课时间"
+                />
+
+            <EditText
+                android:id="@+id/sec_popup_class_time"
+                android:layout_columnSpan="3"
+                android:layout_gravity="fill"
+                android:background="@drawable/editsharp_select"
+                android:hint="格式：一1-2"
+                android:textSize="14sp"
+                android:textColorHint="#a5a5a5"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="30dp"
+                />
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="16dp"
+            android:columnCount="4"
+            android:rowCount="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:text="学分"
+                />
+
+            <EditText
+                android:id="@+id/sec_popup_credit"
+                android:background="@drawable/editsharp_select"
+                android:layout_height="30dp"
+                android:layout_marginLeft="52dp"
+                android:layout_width="52dp"
+                android:textSize="14dp"
+                android:inputType="number"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:text="校区"
+                android:textSize="16dp"/>
+
+            <Spinner
+                android:id="@+id/sec_popup_campus"
+                android:spinnerMode="dialog"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:background="#f6f6f6"
+                android:entries="@array/distirct"
+               >
+            </Spinner>
+
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="16dp"
+            android:columnCount="4"
+            android:rowCount="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="选课人数未满"
+                android:textSize="16sp"/>
+
+            <CheckBox
+                android:id="@+id/sec_popup_checkBox"
+                android:layout_marginLeft="36dp"
+                android:layout_width="65dp"
+                android:layout_height="26dp"
+                android:checked="false"
+                />
+        </GridLayout>
+
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="16dp"
+            android:columnCount="4"
+            android:rowCount="1">
+            <Button
+                android:id="@+id/sec_popup_btn_reset"
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/btnsharp"
+                android:layout_columnSpan="1"
+                android:layout_marginLeft="10dp"
+                android:text="重置"
+                android:textSize="14dp"
+                android:textColor="#ededed"/>
+
+            <Button
+                android:id="@+id/sec_popup_btn_ok"
+                android:layout_width="100dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/btnsharp"
+                android:layout_column="3"
+                android:text="确定"
+                android:textSize="14dp"
+                android:textColor="#ededed"/>
+        </GridLayout>
+
+
+    </GridLayout>
+</ScrollView>

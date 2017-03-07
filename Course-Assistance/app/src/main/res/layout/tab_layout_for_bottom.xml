@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clipChildren="false"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    tools:showIn="@layout/fragment_text_tab">
+
+    <TextView
+        android:id="@+id/tv_home"
+        style="@style/viewpager_navigation_bar_tab_style"
+        android:drawableTop="@drawable/ic_home_grey_500_24dp"
+        android:text="课程表"/>
+
+    <TextView
+        android:id="@+id/tv_location"
+        style="@style/viewpager_navigation_bar_tab_style"
+        android:drawableTop="@drawable/ic_near_me_grey_500_24dp"
+        android:text="手动选课"/>
+
+
+    <TextView
+        android:id="@+id/tv_like"
+        style="@style/viewpager_navigation_bar_tab_style"
+        android:drawableTop="@drawable/ic_shopping_basket_grey_500_24dp"
+        android:text="一键排课"/>
+
+    <TextView
+        android:id="@+id/tv_person"
+        style="@style/viewpager_navigation_bar_tab_style"
+        android:drawableTop="@drawable/ic_account_circle_grey_500_24dp"
+        android:text="个人"/>
+</LinearLayout>

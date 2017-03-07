@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_grey_50"
+    >
+    <include layout="@layout/toorbar_back_title"
+        android:id="@+id/tool_bar_register" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="25dp"
+        android:orientation="vertical"
+        >
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="注册"-->
+            <!--android:textAlignment="center"-->
+            <!--android:textSize="35sp"-->
+            <!--android:layout_marginBottom="35dp"/>-->
+
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="用户名不少于8个字"
+                android:id="@+id/user_name_register"
+                android:textColorHint="@color/md_grey_400"
+                android:background="@drawable/shape_edittext_first"
+                android:padding="15dp"
+                />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="密码不能少于6位"
+                android:id="@+id/user_password_register"
+                android:inputType="textPassword"
+                android:textColorHint="@color/md_grey_400"
+                android:background="@drawable/shape_edittext_middle"
+                android:padding="15dp"
+                />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="再次确认密码"
+                android:inputType="textPassword"
+                android:id="@+id/user_password_confirm_register"
+                android:textColorHint="@color/md_grey_400"
+                android:background="@drawable/shape_edittext_middle"
+                android:padding="15dp"
+                />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入邮箱"
+                android:inputType="textEmailAddress"
+                android:id="@+id/user_email_register"
+                android:textColorHint="@color/md_grey_400"
+                android:background="@drawable/shape_edittext_last"
+                android:padding="15dp"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="确认"
+                android:colorControlHighlight="@color/color1"
+                android:shadowColor="@color/color1"
+                android:backgroundTint="@color/color2"
+                android:id="@+id/submit_register"
+                android:layout_marginTop="25dp"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp"/>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

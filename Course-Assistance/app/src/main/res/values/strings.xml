@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Courses Assistant</string>
+    <string name="user_title">blabla</string>
+    <string name="user_name">昵称</string>
+    <string-array name="distirct">
+        　　        <item>全部</item>
+        　　        <item>本部</item>
+        　　        <item>嘉定</item>
+        　　        <item>延长</item>
+    </string-array>
+</resources>

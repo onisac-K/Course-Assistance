@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval" >
+
+    <!--<padding-->
+        <!--android:bottom="4dp"-->
+        <!--android:left="8dp"-->
+        <!--android:right="4dp"-->
+        <!--android:top="8dp" />-->
+    <!-- 设置圆角矩形 -->
+    <!--<corners-->
+        <!--android:topLeftRadius="8dp"-->
+        <!--android:topRightRadius="8dp"/>-->
+
+    <stroke
+        android:width="2.5px"
+        android:color="@color/color4"
+        />
+    <solid android:color="@color/transparent" />
+</shape>

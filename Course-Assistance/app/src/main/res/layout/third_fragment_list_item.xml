@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="1dp"
+    android:layout_marginTop="6dp"
+    android:layout_marginBottom="6dp"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+    app:cardPreventCornerOverlap="true">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_height="wrap_content"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/thi_fg_cname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimary"
+            android:text="系统结构"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/thi_fg_tname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/md_grey_400"
+                android:text="郑宇"
+                />
+            <TextView
+                android:id="@+id/thi_fg_ctime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:textSize="14sp"
+                android:textAlignment="center"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/md_grey_800"
+                android:text="周一1-2"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:gravity="right"
+        >
+        <!--<TextView-->
+        <!--android:id="@+id/thi_fg_ness"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textSize="18dp"-->
+        <!--android:text="必修"-->
+        <!--android:layout_marginRight="8dp"-->
+        <!--/>-->
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/thi_fg_tb"
+            android:text="必修"
+            android:textColor="@color/color4"
+            android:textSize="14sp"
+
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="40dp"
+        >
+        <Button
+            android:id="@+id/thi_fg_btn_ok"
+            android:layout_width="45dp"
+            android:layout_height="30dp"
+            android:background="@drawable/btnsharp"
+            android:text="确认"
+            android:textSize="14dp"
+            android:layout_marginRight="20dp"
+            android:textColor="#ededed"/>
+        <Button
+            android:id="@+id/thi_fg_btn_delete"
+            android:layout_width="45dp"
+            android:layout_height="30dp"
+            android:background="@drawable/btnsharp_1"
+            android:text="取消"
+            android:textSize="14dp"
+            android:textColor="#ededed" />
+    </LinearLayout>
+
+        <!--<ToggleButton-->
+        <!--android:id="@+id/thi_fg_tb"-->
+        <!--android:layout_width="25dp"-->
+        <!--android:layout_height="25dp"-->
+        <!--style="@style/nesstogg"-->
+        <!--android:checked="false"-->
+        <!--android:background="?android:colorBackground"-->
+        <!--android:textOff=""-->
+        <!--android:layout_marginRight="8dp"-->
+        <!--android:textOn="" />-->
+    </LinearLayout>
+
+
+
+</LinearLayout>
+    </android.support.v7.widget.CardView>
